@@ -1,7 +1,16 @@
-function TabButton() {
+function TabButton({ children, isSelected, onClickHandler }) {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Tab Button !</h1>
+      <button
+        className={
+          isSelected
+            ? "p-2 text-xl underline text-purple-800 font-semibold"
+            : "p-2 text-xl"
+        }
+        onClick={onClickHandler}
+      >
+        {children}
+      </button>
     </>
   );
 }
