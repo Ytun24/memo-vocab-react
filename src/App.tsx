@@ -3,7 +3,7 @@ import "./App.css";
 import TabButton from "./components/TabButton";
 import TabContent from "./components/TabContent";
 import { CORE_FEATURES, TAB_FEATURE_MENU, TAB_FEATURES } from "./data/features";
-import CoreFeature from "./components/CoreFeatue";
+import CoreFeature from "./components/CoreFeature";
 
 function App() {
   const [selectedFeature, setSelectedFeature] = useState(
